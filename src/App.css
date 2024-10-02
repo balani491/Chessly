@@ -1,4 +1,4 @@
-.App {
+/* .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,10 +19,16 @@
   margin: 0;
   padding: 10px;
 }
+.turn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* margin-top: 20px; */
+  align-items: center;
+}
 
 .below{
   display: flex;
-
   justify-content: space-evenly;
   
 }
@@ -46,4 +52,110 @@
   display:flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-left:10px
+} */
+/* General styles */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; Add padding for smaller screens
+}
+
+.navbar {
+  background-color: #333;
+  width: 100%;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.nav-h1 {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  padding: 10px;
+}
+
+.below {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column; /* Stack elements on smaller screens */
+}
+
+.right {
+  margin-left: 0; /* Remove fixed margin for smaller screens */
+  margin-top: 20px;
+}
+
+
+.restart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .below {
+    flex-direction: row; /* Horizontal layout for tablets and up */
+  }
+
+  .right {
+    margin-left: 100px;
+  }
+
+  .undo_btn {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically on mobile */
+    text-align: center;
+  }
+
+  .nav-h1 {
+    font-size: 20px; /* Smaller font size for mobile */
+  }
+
+  .below {
+    flex-direction: column; /* Stack board and captured pieces */
+    align-items: center;
+  }
+
+  .move-history, .captured-pieces {
+    width: 100%; /* Make the sidebar elements full-width */
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .undo_btn {
+    margin-top: 20px;
+  }
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 1px; /* Small gaps between squares */
+  width: 100%; /* Ensure full-width on mobile */
+  max-width: 400px; /* Set a maximum width for larger screens */
+}
+
+.square {
+  aspect-ratio: 1 / 1; /* Make squares responsive and perfectly square */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.piece {
+  font-size: 2em; /* Adjust piece size for readability */
 }

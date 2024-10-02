@@ -201,9 +201,12 @@ const App = () => {
       <nav className="navbar">
         <h1 className="nav-h1">Chessly</h1>
         <button className="restart" onClick={handleRestart}>Restart Match</button>
+        <button onClick={handleUndo}>Undo Last Move</button>
       </nav>
-
-      <h2>Current Turn: {currentPlayer === 'w' ? 'White' : 'Black'}</h2>
+      <div className="turn">
+        <h2>Current Turn: {currentPlayer === 'w' ? 'White' : 'Black'}</h2>
+      </div>
+      
       <div className="below">
         <div className="left">
           <Board boardState={boardState} handleMove={handleSquareClick} selectedSquare={selectedSquare} />
@@ -232,9 +235,7 @@ const App = () => {
         </div>
       </div>
       <ToastContainer position="bottom-right" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick pauseOnHover draggable />
-      <div className="undo_btn">
-        <button onClick={handleUndo}>Undo Last Move</button>
-      </div>
+      
     </div>
   );
 };
