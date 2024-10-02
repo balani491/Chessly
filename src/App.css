@@ -1,0 +1,28 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* This centers the content horizontally */
+}
+.navbar{
+  background-color: #333;
+  width: 100%;
+  text-align: center;
+  text-color: white;
+}
+.nav-h1{
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  padding: 10px;
+}
+
+.below{
+  display: flex;
+
+  justify-content: space-evenly;
+  
+}
+.right{
+  margin-left: 100px;
+}
