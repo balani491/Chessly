@@ -9,6 +9,9 @@
   width: 100%;
   text-align: center;
   text-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 .nav-h1{
   color: white;
@@ -25,4 +28,22 @@
 }
 .right{
   margin-left: 100px;
+}
+.undo_btn{
+  display:flex;
+  flex-direction: column;
+  margin-top: 100px;
+  justify-content: space-evenly;
+  
+
+}
+.undo_btn:hover{
+  background-color: #333;
+  color: white;
+}
+
+.restart{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
