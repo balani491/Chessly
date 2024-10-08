@@ -118,10 +118,12 @@
   .navbar {
     flex-direction: column; /* Stack navbar items vertically on mobile */
     text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .nav-h1 {
-    font-size: 20px; /* Smaller font size for mobile */
+    font-size: 2px; /* Smaller font size for mobile */
   }
 
   .below {
