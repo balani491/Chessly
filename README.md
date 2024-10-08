@@ -28,7 +28,7 @@ Chessly is a web-based chess application built using React and chess.js. It incl
     npm run dev
     ```
 
-5. Open your browser and navigate to `http://localhost:3000` to access the application.
+5. Open your browser and navigate to `http://localhost:5173` to access the application.
 
 ## Preview
 
