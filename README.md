@@ -1,5 +1,5 @@
 # Chessly
-
+Screen Recording Link : https://drive.google.com/file/d/1nCBO5AmQx-XhwIT7IB9oyzddPINhGJz3/view?usp=sharing
 Chessly is a web-based chess application built using React and chess.js. It includes features like move validation, undoing moves, displaying captured pieces, and maintaining move history.
 
 ## Features
